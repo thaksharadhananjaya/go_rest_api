@@ -27,7 +27,8 @@ func main() {
     userController := controller.NewUserController(userUseCase)
 
 	// Set up Gin router
-    router := gin.Default()
+    r := gin.Default()
+	router := r.Group("/api/v1")
 
 	// Initialize error-handling middleware
     errorMiddleware := middleware.ErrorHandler()
@@ -42,5 +43,5 @@ func main() {
     protected.PATCH("/users/:id", userController.UpdateUser)
     protected.DELETE("/users/:id", userController.DeleteUser)
 
-    router.Run(cfg.ServerAddress)
+    r.Run(cfg.ServerAddress)
 }
