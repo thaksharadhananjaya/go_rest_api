@@ -26,7 +26,7 @@ go.work
 
 # Dependency management files
 go.sum
-go.mod
+
 
 # Environment variables file
 .env
