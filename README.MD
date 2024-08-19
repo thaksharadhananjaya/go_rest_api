@@ -1,4 +1,4 @@
-# REST API with Go, GORM, Gin, and PostgreSQL
+# REST API with Go, GORM, and PostgreSQL
 
 This project is a simple REST API built with Go, GORM. The API includes JWT authentication using RSA keys.
 
