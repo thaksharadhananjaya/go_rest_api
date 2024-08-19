@@ -1,0 +1,12 @@
+PORT=8000
+
+# database configuration
+DATABASE_USER=postgres
+DATABASE_PASSWORD=xxxx
+DATABASE_NAME=db_name
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+
+# public key path
+JWT_PUBLIC_KEY_PATH=
+
